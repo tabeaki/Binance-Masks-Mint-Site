@@ -8,7 +8,7 @@ function Header() {
                     <img className="mt-2" src="/logo.png" alt="LOGO" height="40" width="50" />
                     </div>
                     <div className="justify-end px-2 flex">
-                        <div className="bg-[url('/opensea_icon.png')] invisible md:visible px-2 pt-8 mx-1 bg-center bg-cover"><a className="px-2 py-4" href="https://opensea.io/ja/collection/eth-masks-by-token-masks-labs"></a></div>
+                        <div className="bg-[url('/opensea_icon.png')] invisible md:visible px-2 pt-8 mx-1 bg-center bg-cover"><a className="px-2 py-4" href="https://opensea.io/ja/collection/binance-masks"></a></div>
                         <div className="bg-[url('/twitter_icon.png')] invisible md:visible px-2 pt-8 mx-1 bg-center bg-cover"><a className="px-2 py-4" href="https://twitter.com/TokenMasksLabs"></a></div>
                         <div className="bg-[url('/discode_icon.png')] invisible md:visible px-2 pt-8 mx-1 bg-center bg-cover"><a className="px-2 py-4" href="https://discord.gg/KJ74T23kxU"></a></div>
                     </div>
