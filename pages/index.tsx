@@ -38,7 +38,7 @@ const Home: NextPage = () => {
       try{
         await (window as any).ethereum.request({
           method: 'wallet_switchEthereumChain',
-          params: [{ chainId: '0x250' }],
+          params: [{ chainId: '0x38' }],
         });
         const provider = await new ethers.providers.Web3Provider((window as any).ethereum);
         await provider.send('eth_requestAccounts', []);
@@ -46,28 +46,6 @@ const Home: NextPage = () => {
         setDisabledFlag(true);
       } catch(e) {
         console.log(e);
-      }
-      try{
-        await (window as any).ethereum.request({
-          method: 'wallet_addEthereumChain',
-          params: [{
-            chainId: '0x250',
-            chainName: 'Astar',
-            nativeCurrency: {
-              name: 'ASTR',
-              symbol: 'ASTR',
-              decimals: 592,
-            },
-            rpcUrls: ['https://astar-mainnet.g.alchemy.com/v2/8Zfh4gnK2X2Z25WXQnjo70PvzbJ4EWt5'],
-          }],
-        });
-        console.log('try');
-        setDisabledFlag(true);
-      }catch(Exeption){
-        console.log('Ethereum already Connected');
-        console.log('catch');
-      }finally{
-        console.log('finally');
       }
     }
     const mintQuantityPlus = async () =>{
